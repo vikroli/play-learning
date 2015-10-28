@@ -1,0 +1,30 @@
+@()
+
+@main("Welcome to Play") {
+    <script type='text/javascript' src='@routes.Assets.at("javascripts/index.js")'></script>
+
+    <ul id="numbers"></ul>
+
+    <form method="POST" action="@routes.Application.addNumber()">
+        values to be saved
+        <input type="number" name="value" min="-999999" max="1000000"/>
+        <button>add number</button>
+    </form>
+    
+    <form method="GET" action="@routes.Application.getCount()">
+        <button>get Count</button>
+    </form>
+    
+    <form method="GET" action="@routes.Application.getAverage()">
+        <button>get Average</button>
+    </form>
+    
+    <form method="GET" action="@routes.Application.getSum()">
+        <button>get Sum</button>
+    </form>
+    
+     <form method="GET" action="@routes.Application.deleteNumber()">
+        <input type="number" name="value" min="-999999" max="1000000"/>
+        <button>delete Number</button>
+    </form>
+}

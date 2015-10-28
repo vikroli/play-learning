@@ -1,0 +1,30 @@
+New log file opened at Wed Oct 28 15:10:18 CET 2015 by 14742@viktoria
+Taking next connection to: 41225
+New client attempting to connect on port: 35316-41225
+  Address = /127.0.1.1:41225
+This client on port 35316 has uuid 134f6263-098b-4310-bec2-903b3ec001bb configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-134f6263-098b-4310-bec2-903b3ec001bb
+Taking next connection to: 41225
+New client attempting to connect on port: 35317-41225
+  Address = /127.0.1.1:41225
+Handshake exception on socket: 35317
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 41225
+New client attempting to connect on port: 35318-41225
+  Address = /127.0.1.1:41225
+This client on port 35318 has uuid 89283a66-61d8-4f4b-a6a5-f095e25a22a4 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-134f6263-098b-4310-bec2-903b3ec001bb, activator-89283a66-61d8-4f4b-a6a5-f095e25a22a4
+Taking next connection to: 41225
+Server socket closed java.net.SocketException: Socket closed
+Server socket thread exiting.
+1 clients open, will close them...
+All client sockets have been closed.
+Closing the 14742@viktoria logs at Wed Oct 28 15:12:06 CET 2015, goodbye.
