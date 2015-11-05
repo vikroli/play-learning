@@ -9,7 +9,8 @@ GET     /numbers                    @controllers.Application.getNumbers
 GET     /count                      @controllers.Application.getCount()
 GET     /avg                        @controllers.Application.getAverage()
 GET     /sum                        @controllers.Application.getSum()
-POST       /                   @controllers.Application.deleteNumber()
+POST    /                   		@controllers.Application.deleteNumber()
+POST	/update						@controllers.Application.updateNumber()
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               @controllers.Assets.at(path="/public", file)

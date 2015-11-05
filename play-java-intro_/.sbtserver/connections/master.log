@@ -1,7 +1,10 @@
-New log file opened at Thu Nov 05 23:00:08 CET 2015 by 20151@viktoria-desktop
-Taking next connection to: 36016
-New client attempting to connect on port: 38436-36016
-  Address = /127.0.1.1:36016
-This client on port 38436 has uuid 76a3de11-b46a-48ac-a7ab-a5c7ac36fef3 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: play-fork-run-76a3de11-b46a-48ac-a7ab-a5c7ac36fef3
-Taking next connection to: 36016
+New log file opened at Fri Nov 06 00:29:40 CET 2015 by 29062@viktoria-desktop
+Taking next connection to: 45994
+New client attempting to connect on port: 43152-45994
+  Address = /127.0.1.1:45994
+This client on port 43152 has uuid 3e2146ee-82a2-4888-9982-fb40604edcb8 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: play-fork-run-3e2146ee-82a2-4888-9982-fb40604edcb8
+Taking next connection to: 45994
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 45994

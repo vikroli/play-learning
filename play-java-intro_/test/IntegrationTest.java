@@ -20,8 +20,8 @@ public class IntegrationTest {
     public void test() {
         running(testServer(3333, fakeApplication(inMemoryDatabase())), HTMLUNIT, new Callback<TestBrowser>() {
             public void invoke(TestBrowser browser) {
-                browser.goTo("http://localhost:3333");
-                assertThat(browser.pageSource(), containsString("Add Person"));
+                browser.goTo("http://localhost:9000");
+                assertThat(browser.pageSource(), containsString("values to be saved"));
             }
         });
     }

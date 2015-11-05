@@ -12,19 +12,28 @@
     </form>
     
     <form method="GET" action="@routes.Application.getCount()">
-        <button>get Count</button>
+        <button>get count</button>
     </form>
     
     <form method="GET" action="@routes.Application.getAverage()">
-        <button>get Average</button>
+        <button>get average</button>
     </form>
     
     <form method="GET" action="@routes.Application.getSum()">
-        <button>get Sum</button>
+        <button>get sum</button>
     </form>
     
      <form method="POST" action="@routes.Application.deleteNumber()">
-        <input type="long" name="id" min="-999999" max="1000000" />       
-        <button>delete Number</button>
+     	delete number with id: 
+        <input type="number" name="id" min="1" />       
+        <button>delete</button>
     </form>
-}
+    
+     <form method="POST" action="@routes.Application.updateNumber()">
+     	update number with id: 
+        <input type="number" name="id" min="1" autocomplete="on" title="bla"/> 
+        new value:
+        <input type="number" name="value" min="-999999" max="1000000" autocomplete="on"/> 
+        <button>update</button>
+    </form>
+   }
