@@ -20,7 +20,6 @@ public class Application extends Controller {
 
   @Transactional
   public Result addNumber() {
-
     System.out.println("...addNumber()");
     MyNumber number = Form.form(MyNumber.class).bindFromRequest().get();
     System.out.println("\tnumber: " + number.id + " -> " + number.value);
@@ -81,21 +80,11 @@ public class Application extends Controller {
   
    @Transactional
   public Result deleteNumber() {
-      long numberId = Form.form(Long.class).bindFromRequest().get();
-      System.out.println("*** "+numberId+" ***");
-     JPA.em().createQuery("delete from MyNumber where id="+numberId).getSingleResult();
+	   MyNumber mn = Form.form(MyNumber.class).bindFromRequest().get();
+      System.out.println("*** "+mn+" ***");
+     JPA.em().createQuery("delete from MyNumber where id="+mn.id).executeUpdate();
            System.out.println("*** deleted ***");
-    return getNumbers();
+           return redirect(routes.Application.index());
   }
- //@Transactional
- //public  Result deleteNumber() {
-    // long id=0;
-  //  MyNumber number = MyNumber.findById(id);
-   // MyNumber numberDeleted =
-      //  JPA.em().createQuery("delete n from MyNumber n where id=" + number.id).getSingleResult();
-     // return ok(toJson(numberDeleted));
- //     return ok();
-  //}
-  // public static Result editNumber(){}
 
 }

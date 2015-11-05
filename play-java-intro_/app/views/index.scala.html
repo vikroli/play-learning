@@ -3,7 +3,7 @@
 @main("Welcome to Play") {
     <script type='text/javascript' src='@routes.Assets.at("javascripts/index.js")'></script>
 
-    <ul id="numbers"></ul>
+    <table id="numbers"></table>
 
     <form method="POST" action="@routes.Application.addNumber()">
         values to be saved
@@ -23,8 +23,8 @@
         <button>get Sum</button>
     </form>
     
-     <form method="GET" action="@routes.Application.deleteNumber()">
-        <input type="number" name="value" min="-999999" max="1000000"/>
+     <form method="POST" action="@routes.Application.deleteNumber()">
+        <input type="long" name="id" min="-999999" max="1000000" />       
         <button>delete Number</button>
     </form>
 }

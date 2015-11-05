@@ -1,4 +1,6 @@
 $ ->
   $.get "/numbers", (numbers) ->
     $.each numbers, (index, number) ->
-      $("#numbers").append $("<li>").text number.value
+      id = $("<td>").text number.id
+      value = $("<td>").text number.value
+      $("#numbers").append $("<tr>").append(id, value)
